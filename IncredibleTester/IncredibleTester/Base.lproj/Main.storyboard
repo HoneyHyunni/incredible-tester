@@ -59,6 +59,14 @@
                                     <action selector="vibrateSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI9-pu-K7d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-zu-zpI">
+                                <rect key="frame" x="20" y="493" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Selection"/>
+                                <connections>
+                                    <action selector="vibrateSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYF-5X-c7U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,8 +76,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzN-DT-EAJ" secondAttribute="trailing" constant="20" id="6SX-g0-vv8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2x-9p-hNx" secondAttribute="trailing" constant="20" id="Oq4-bE-hgM"/>
                             <constraint firstItem="Bya-vH-xRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yds-pK-uaZ"/>
+                            <constraint firstItem="h2x-9p-hNx" firstAttribute="top" secondItem="KqO-zu-zpI" secondAttribute="bottom" constant="60" id="Yhr-kX-VRA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jL5-uh-mlA" secondAttribute="trailing" constant="20" id="Za6-JN-w5m"/>
+                            <constraint firstItem="KqO-zu-zpI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dGj-aQ-rai"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TzN-DT-EAJ" secondAttribute="bottom" constant="50" id="eeF-ka-W7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KqO-zu-zpI" secondAttribute="trailing" constant="20" id="fGB-y5-qma"/>
                             <constraint firstItem="h2x-9p-hNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fdT-Wn-a6z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bya-vH-xRh" secondAttribute="trailing" constant="20" id="pHJ-R2-VBQ"/>
                             <constraint firstItem="jL5-uh-mlA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pj0-mH-Wwp"/>

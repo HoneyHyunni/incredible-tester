@@ -9,14 +9,20 @@ import UIKit
 
 class HapticViewController: UIViewController {
     
-    var notificationFeedbackGenerator = UINotificationFeedbackGenerator()
+    let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+    let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.selectionFeedbackGenerator.prepare()
         self.notificationFeedbackGenerator.prepare()
     }
 
+    @IBAction func vibrateSelection(_ sender: Any) {
+        self.selectionFeedbackGenerator.selectionChanged()
+    }
+    
     @IBAction func vibrateSuccess(_ sender: Any) {
         self.notificationFeedbackGenerator.notificationOccurred(.success)
     }
