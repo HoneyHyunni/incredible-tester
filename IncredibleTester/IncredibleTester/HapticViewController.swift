@@ -19,6 +19,20 @@ class HapticViewController: UIViewController {
         self.notificationFeedbackGenerator.prepare()
     }
 
+    @IBAction func vibrateImpact1(_ sender: Any) {
+        let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+        impactFeedbackGenerator.prepare()
+        impactFeedbackGenerator.impactOccurred()
+    }
+    
+    @IBAction func vibrateImpact2(_ sender: Any) {
+        if #available(iOS 13, *) {
+            let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .rigid)
+            impactFeedbackGenerator.prepare()
+            impactFeedbackGenerator.impactOccurred(intensity: 1)
+        }
+    }
+    
     @IBAction func vibrateSelection(_ sender: Any) {
         self.selectionFeedbackGenerator.selectionChanged()
     }
