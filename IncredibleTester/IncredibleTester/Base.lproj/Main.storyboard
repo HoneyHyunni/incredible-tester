@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Haptic View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HapticViewController" customModule="IncredibleTester" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL5-uh-mlA">
+                                <rect key="frame" x="20" y="79" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HjN-ty-g2u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-DT-EAJ">
+                                <rect key="frame" x="20" y="728" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jsd-ZX-nHm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Error"/>
+                                <connections>
+                                    <action selector="vibrateError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxV-23-AHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bya-vH-xRh">
+                                <rect key="frame" x="20" y="658" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NwU-ct-A6c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Warning"/>
+                                <connections>
+                                    <action selector="vibrateWarning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPI-Kn-enV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-9p-hNx">
+                                <rect key="frame" x="20" y="588" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cyn-sT-aKy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Success"/>
+                                <connections>
+                                    <action selector="vibrateSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI9-pu-K7d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-zu-zpI">
+                                <rect key="frame" x="20" y="508" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Selection"/>
+                                <connections>
+                                    <action selector="vibrateSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYF-5X-c7U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI0-kw-6q0">
+                                <rect key="frame" x="20" y="423" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Kq-42-3Kw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Impact 2"/>
+                                <connections>
+                                    <action selector="vibrateImpact2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6h-xE-33c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-aD-MDO">
+                                <rect key="frame" x="20" y="353" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v6a-OJ-jNJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Impact 1"/>
+                                <connections>
+                                    <action selector="vibrateImpact1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJb-id-9sF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TzN-DT-EAJ" firstAttribute="top" secondItem="Bya-vH-xRh" secondAttribute="bottom" constant="30" id="19l-Qe-8JN"/>
+                            <constraint firstItem="jL5-uh-mlA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5vF-7a-ghg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzN-DT-EAJ" secondAttribute="trailing" constant="20" id="6SX-g0-vv8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aI0-kw-6q0" secondAttribute="trailing" constant="20" id="HPu-1L-NLd"/>
+                            <constraint firstItem="aI0-kw-6q0" firstAttribute="top" secondItem="OAs-aD-MDO" secondAttribute="bottom" constant="30" id="NBJ-x5-isd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2x-9p-hNx" secondAttribute="trailing" constant="20" id="Oq4-bE-hgM"/>
+                            <constraint firstItem="KqO-zu-zpI" firstAttribute="top" secondItem="aI0-kw-6q0" secondAttribute="bottom" constant="45" id="VY1-FR-QHK"/>
+                            <constraint firstItem="Bya-vH-xRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yds-pK-uaZ"/>
+                            <constraint firstItem="h2x-9p-hNx" firstAttribute="top" secondItem="KqO-zu-zpI" secondAttribute="bottom" constant="45" id="Yhr-kX-VRA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jL5-uh-mlA" secondAttribute="trailing" constant="20" id="Za6-JN-w5m"/>
+                            <constraint firstItem="KqO-zu-zpI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dGj-aQ-rai"/>
+                            <constraint firstItem="aI0-kw-6q0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e0J-4h-cph"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TzN-DT-EAJ" secondAttribute="bottom" constant="50" id="eeF-ka-W7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KqO-zu-zpI" secondAttribute="trailing" constant="20" id="fGB-y5-qma"/>
+                            <constraint firstItem="h2x-9p-hNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fdT-Wn-a6z"/>
+                            <constraint firstItem="OAs-aD-MDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hS6-A4-4XO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OAs-aD-MDO" secondAttribute="trailing" constant="20" id="ncs-k7-Giz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bya-vH-xRh" secondAttribute="trailing" constant="20" id="pHJ-R2-VBQ"/>
+                            <constraint firstItem="jL5-uh-mlA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pj0-mH-Wwp"/>
+                            <constraint firstItem="TzN-DT-EAJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sTt-BN-jap"/>
+                            <constraint firstItem="Bya-vH-xRh" firstAttribute="top" secondItem="h2x-9p-hNx" secondAttribute="bottom" constant="30" id="tpD-vA-a6s"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
