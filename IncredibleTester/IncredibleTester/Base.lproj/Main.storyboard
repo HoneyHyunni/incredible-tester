@@ -32,21 +32,49 @@
                                     <constraint firstAttribute="height" constant="40" id="jsd-ZX-nHm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Haptic"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Error"/>
                                 <connections>
-                                    <action selector="vibrate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEd-tx-6uL"/>
+                                    <action selector="vibrateError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxV-23-AHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bya-vH-xRh">
+                                <rect key="frame" x="20" y="658" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NwU-ct-A6c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Warning"/>
+                                <connections>
+                                    <action selector="vibrateWarning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPI-Kn-enV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-9p-hNx">
+                                <rect key="frame" x="20" y="588" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cyn-sT-aKy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Haptic Success"/>
+                                <connections>
+                                    <action selector="vibrateSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI9-pu-K7d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TzN-DT-EAJ" firstAttribute="top" secondItem="Bya-vH-xRh" secondAttribute="bottom" constant="30" id="19l-Qe-8JN"/>
                             <constraint firstItem="jL5-uh-mlA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5vF-7a-ghg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzN-DT-EAJ" secondAttribute="trailing" constant="20" id="6SX-g0-vv8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2x-9p-hNx" secondAttribute="trailing" constant="20" id="Oq4-bE-hgM"/>
+                            <constraint firstItem="Bya-vH-xRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yds-pK-uaZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jL5-uh-mlA" secondAttribute="trailing" constant="20" id="Za6-JN-w5m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TzN-DT-EAJ" secondAttribute="bottom" constant="50" id="eeF-ka-W7X"/>
+                            <constraint firstItem="h2x-9p-hNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fdT-Wn-a6z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bya-vH-xRh" secondAttribute="trailing" constant="20" id="pHJ-R2-VBQ"/>
                             <constraint firstItem="jL5-uh-mlA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pj0-mH-Wwp"/>
                             <constraint firstItem="TzN-DT-EAJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sTt-BN-jap"/>
+                            <constraint firstItem="Bya-vH-xRh" firstAttribute="top" secondItem="h2x-9p-hNx" secondAttribute="bottom" constant="30" id="tpD-vA-a6s"/>
                         </constraints>
                     </view>
                 </viewController>
