@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086C292A2B15709400433548 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29292B15709400433548 /* HomeViewController.swift */; };
+		086C292F2B15753A00433548 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C292E2B15753A00433548 /* HomeViewModel.swift */; };
+		086C29322B159E0600433548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29312B159E0600433548 /* Constants.swift */; };
+		086C29342B159EB100433548 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29332B159EB100433548 /* UIAlertControllerExtension.swift */; };
+		086C29392B15AC1C00433548 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29382B15AC1C00433548 /* WKWebViewController.swift */; };
 		08F4E2A02B1037CB002EAF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E29F2B1037CB002EAF03 /* AppDelegate.swift */; };
 		08F4E2A42B1037CB002EAF03 /* HapticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E2A32B1037CB002EAF03 /* HapticViewController.swift */; };
 		08F4E2A72B1037CB002EAF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F4E2A52B1037CB002EAF03 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086C29292B15709400433548 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		086C292E2B15753A00433548 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		086C29312B159E0600433548 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		086C29332B159EB100433548 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		086C29382B15AC1C00433548 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		08F4E29C2B1037CB002EAF03 /* IncredibleTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncredibleTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F4E29F2B1037CB002EAF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08F4E2A32B1037CB002EAF03 /* HapticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086C29302B159DFA00433548 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				086C29312B159E0600433548 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		086C29352B15A58E00433548 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				086C29332B159EB100433548 /* UIAlertControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		086C29362B15ABE300433548 /* TestViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08F4E2A32B1037CB002EAF03 /* HapticViewController.swift */,
+				086C29382B15AC1C00433548 /* WKWebViewController.swift */,
+			);
+			path = TestViewControllers;
+			sourceTree = "<group>";
+		};
 		08F4E2932B1037CB002EAF03 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +132,12 @@
 		08F4E29E2B1037CB002EAF03 /* IncredibleTester */ = {
 			isa = PBXGroup;
 			children = (
+				086C29362B15ABE300433548 /* TestViewControllers */,
+				086C29302B159DFA00433548 /* Common */,
+				086C29352B15A58E00433548 /* Extension */,
 				08F4E29F2B1037CB002EAF03 /* AppDelegate.swift */,
-				08F4E2A32B1037CB002EAF03 /* HapticViewController.swift */,
+				086C29292B15709400433548 /* HomeViewController.swift */,
+				086C292E2B15753A00433548 /* HomeViewModel.swift */,
 				08F4E2A52B1037CB002EAF03 /* Main.storyboard */,
 				08F4E2AA2B1037CD002EAF03 /* LaunchScreen.storyboard */,
 				08F4E2A82B1037CD002EAF03 /* Assets.xcassets */,
@@ -255,8 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086C29322B159E0600433548 /* Constants.swift in Sources */,
 				08F4E2A42B1037CB002EAF03 /* HapticViewController.swift in Sources */,
+				086C29392B15AC1C00433548 /* WKWebViewController.swift in Sources */,
+				086C292F2B15753A00433548 /* HomeViewModel.swift in Sources */,
 				08F4E2A02B1037CB002EAF03 /* AppDelegate.swift in Sources */,
+				086C29342B159EB100433548 /* UIAlertControllerExtension.swift in Sources */,
+				086C292A2B15709400433548 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
