@@ -54,6 +54,80 @@
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
         </scene>
+        <!--Haptic View Controller-->
+        <scene sceneID="t1W-DC-G6K">
+            <objects>
+                <viewController storyboardIdentifier="HAPTIC" id="nez-iP-Kig" customClass="HapticViewController" customModule="IncredibleTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ymc-e7-EK3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haptic Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-Cv-Oxe">
+                                <rect key="frame" x="20" y="79" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Uif-dL-ANg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlU-ZC-04C">
+                                <rect key="frame" x="20" y="179" width="353" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IQc-Fm-563"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jWb-Ft-WfG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="UF6-Cv-Oxe" secondAttribute="trailing" constant="20" id="71c-VH-HL1"/>
+                            <constraint firstItem="UF6-Cv-Oxe" firstAttribute="top" secondItem="jWb-Ft-WfG" secondAttribute="top" constant="20" id="9iD-Co-ESU"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="UlU-ZC-04C" secondAttribute="trailing" constant="20" id="QVs-Iz-Yc3"/>
+                            <constraint firstItem="UF6-Cv-Oxe" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="XT6-vu-4LA"/>
+                            <constraint firstItem="UlU-ZC-04C" firstAttribute="top" secondItem="UF6-Cv-Oxe" secondAttribute="bottom" constant="50" id="sXo-xt-Uv7"/>
+                            <constraint firstItem="UlU-ZC-04C" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="tTe-0P-B6a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBT-Qi-zeb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011" y="4"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="NfX-ot-tdm">
+            <objects>
+                <viewController storyboardIdentifier="WK_WEB_VIEW" id="bLr-7e-Vex" customClass="WKWebViewController" customModule="IncredibleTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nQ9-rR-Tlf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WKWebView Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OB-8a-rlg">
+                                <rect key="frame" x="20" y="79" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hAo-EZ-xng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qv4-mI-iwg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qv4-mI-iwg" firstAttribute="trailing" secondItem="4OB-8a-rlg" secondAttribute="trailing" constant="20" id="3Ql-yR-MgS"/>
+                            <constraint firstItem="4OB-8a-rlg" firstAttribute="top" secondItem="Qv4-mI-iwg" secondAttribute="top" constant="20" id="Q5u-Ql-Ryh"/>
+                            <constraint firstItem="4OB-8a-rlg" firstAttribute="leading" secondItem="Qv4-mI-iwg" secondAttribute="leading" constant="20" id="x9f-kU-JRe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KN-nm-Pfg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
