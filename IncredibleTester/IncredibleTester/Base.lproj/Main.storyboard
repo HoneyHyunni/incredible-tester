@@ -71,25 +71,109 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlU-ZC-04C">
-                                <rect key="frame" x="20" y="179" width="353" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImpactFeedbackGenerator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-KU-iQL">
+                                <rect key="frame" x="20" y="159" width="353" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IQc-Fm-563"/>
+                                    <constraint firstAttribute="height" constant="40" id="Pvj-ac-3g4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-Wd-wbp">
+                                <rect key="frame" x="20" y="219" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0XM-H9-QjP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy"/>
+                                <connections>
+                                    <action selector="impactHeavy:" destination="nez-iP-Kig" eventType="touchUpInside" id="Qrv-ZD-fqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMz-Yc-TOd">
+                                <rect key="frame" x="20" y="519" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="g6e-Qn-taZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy 1.0"/>
+                                <connections>
+                                    <action selector="impactH10:" destination="nez-iP-Kig" eventType="touchUpInside" id="ThU-3g-p3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRp-iC-SHa">
+                                <rect key="frame" x="20" y="279" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bpM-Pb-1cS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy 0.2"/>
+                                <connections>
+                                    <action selector="impactH2:" destination="nez-iP-Kig" eventType="touchUpInside" id="dkG-M7-aXe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seD-D2-OF4">
+                                <rect key="frame" x="20" y="339" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RT7-5y-Fd8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy 0.4"/>
+                                <connections>
+                                    <action selector="impactH4:" destination="nez-iP-Kig" eventType="touchUpInside" id="O0c-EJ-xko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-rW-56D">
+                                <rect key="frame" x="20" y="399" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qgp-BA-j2m"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy 0.6"/>
+                                <connections>
+                                    <action selector="impactH6:" destination="nez-iP-Kig" eventType="touchUpInside" id="rlQ-75-0Q2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-WQ-ugV">
+                                <rect key="frame" x="20" y="459" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7PY-Lg-QtC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Heavy 0.8"/>
+                                <connections>
+                                    <action selector="impactH8:" destination="nez-iP-Kig" eventType="touchUpInside" id="Kvo-fK-aXl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jWb-Ft-WfG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BMz-Yc-TOd" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="2UE-66-DnE"/>
+                            <constraint firstItem="d3Z-KU-iQL" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="5GC-8c-VvZ"/>
                             <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="UF6-Cv-Oxe" secondAttribute="trailing" constant="20" id="71c-VH-HL1"/>
+                            <constraint firstItem="d3Z-KU-iQL" firstAttribute="top" secondItem="UF6-Cv-Oxe" secondAttribute="bottom" constant="30" id="75E-aY-Cii"/>
                             <constraint firstItem="UF6-Cv-Oxe" firstAttribute="top" secondItem="jWb-Ft-WfG" secondAttribute="top" constant="20" id="9iD-Co-ESU"/>
-                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="UlU-ZC-04C" secondAttribute="trailing" constant="20" id="QVs-Iz-Yc3"/>
+                            <constraint firstItem="seD-D2-OF4" firstAttribute="top" secondItem="mRp-iC-SHa" secondAttribute="bottom" constant="20" id="Dv8-CI-og5"/>
+                            <constraint firstItem="Tc9-rW-56D" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="EHb-P4-etd"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="seD-D2-OF4" secondAttribute="trailing" constant="20" id="P3E-gG-1Ha"/>
+                            <constraint firstItem="UKC-WQ-ugV" firstAttribute="top" secondItem="Tc9-rW-56D" secondAttribute="bottom" constant="20" id="Pcz-VA-txx"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="BMz-Yc-TOd" secondAttribute="trailing" constant="20" id="WBN-Wa-6Xd"/>
+                            <constraint firstItem="BMz-Yc-TOd" firstAttribute="top" secondItem="UKC-WQ-ugV" secondAttribute="bottom" constant="20" id="WiM-Kl-lAx"/>
                             <constraint firstItem="UF6-Cv-Oxe" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="XT6-vu-4LA"/>
-                            <constraint firstItem="UlU-ZC-04C" firstAttribute="top" secondItem="UF6-Cv-Oxe" secondAttribute="bottom" constant="50" id="sXo-xt-Uv7"/>
-                            <constraint firstItem="UlU-ZC-04C" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="tTe-0P-B6a"/>
+                            <constraint firstItem="Tc9-rW-56D" firstAttribute="top" secondItem="seD-D2-OF4" secondAttribute="bottom" constant="20" id="XYP-Yu-1Jz"/>
+                            <constraint firstItem="mRp-iC-SHa" firstAttribute="top" secondItem="sNp-Wd-wbp" secondAttribute="bottom" constant="20" id="Z9y-eX-GZ3"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="mRp-iC-SHa" secondAttribute="trailing" constant="20" id="cPE-S8-fA3"/>
+                            <constraint firstItem="sNp-Wd-wbp" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="evr-lm-OmQ"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="Tc9-rW-56D" secondAttribute="trailing" constant="20" id="gwK-86-rSL"/>
+                            <constraint firstItem="seD-D2-OF4" firstAttribute="leading" secondItem="Ymc-e7-EK3" secondAttribute="leading" constant="20" id="rCr-yi-cAo"/>
+                            <constraint firstItem="sNp-Wd-wbp" firstAttribute="top" secondItem="d3Z-KU-iQL" secondAttribute="bottom" constant="20" id="tRm-64-Z4j"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="sNp-Wd-wbp" secondAttribute="trailing" constant="20" id="tzK-6N-KCB"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="UKC-WQ-ugV" secondAttribute="trailing" constant="20" id="yMa-EP-Cic"/>
+                            <constraint firstItem="mRp-iC-SHa" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="ylS-Hc-Rmk"/>
+                            <constraint firstItem="UKC-WQ-ugV" firstAttribute="leading" secondItem="jWb-Ft-WfG" secondAttribute="leading" constant="20" id="zGd-0C-9Bp"/>
+                            <constraint firstItem="jWb-Ft-WfG" firstAttribute="trailing" secondItem="d3Z-KU-iQL" secondAttribute="trailing" constant="20" id="zI7-8C-f1r"/>
                         </constraints>
                     </view>
                 </viewController>
