@@ -9,44 +9,51 @@ import UIKit
 
 class HapticViewController: UIViewController {
     
-    let impactFeedbackGenerator = UIImpactFeedbackGenerator()
-    let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
-    let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+    let heavyFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.selectionFeedbackGenerator.prepare()
-        self.notificationFeedbackGenerator.prepare()
+        self.heavyFeedbackGenerator.prepare()
     }
     
     
-    @IBAction func impact2(_ sender: Any) {
-        print(2)
+    @IBAction func impactHeavy(_ sender: Any) {
+        self.heavyFeedbackGenerator.impactOccurred()
     }
     
-    @IBAction func impact4(_ sender: Any) {
+    @IBAction func impactH2(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            self.heavyFeedbackGenerator.impactOccurred(intensity: 0.2)
+        }
     }
     
-    @IBAction func impact6(_ sender: Any) {
+    @IBAction func impactH4(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            self.heavyFeedbackGenerator.impactOccurred(intensity: 0.4)
+        }
+
     }
     
-    @IBAction func impact8(_ sender: Any) {
+    @IBAction func impactH6(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            self.heavyFeedbackGenerator.impactOccurred(intensity: 0.6)
+        }
+
     }
     
-    @IBAction func impact10(_ sender: Any) {
+    @IBAction func impactH8(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            self.heavyFeedbackGenerator.impactOccurred(intensity: 0.8)
+        }
+
     }
     
-    @IBAction func notifySuccess(_ sender: Any) {
-    }
-    
-    @IBAction func notifyWarning(_ sender: Any) {
-    }
-    
-    @IBAction func notifyError(_ sender: Any) {
-    }
-    
-    @IBAction func vibrateSelection(_ sender: Any) {
+    @IBAction func impactH10(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            self.heavyFeedbackGenerator.impactOccurred(intensity: 1.0)
+        }
+
     }
     
 }
