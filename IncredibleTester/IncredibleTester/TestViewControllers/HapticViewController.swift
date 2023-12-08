@@ -9,8 +9,9 @@ import UIKit
 
 class HapticViewController: UIViewController {
     
-    let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
+    let impactFeedbackGenerator = UIImpactFeedbackGenerator()
     let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
+    let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,36 +19,34 @@ class HapticViewController: UIViewController {
         self.selectionFeedbackGenerator.prepare()
         self.notificationFeedbackGenerator.prepare()
     }
-
-//    @IBAction func vibrateImpact1(_ sender: Any) {
-//        let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
-//        impactFeedbackGenerator.prepare()
-//        impactFeedbackGenerator.impactOccurred()
-//    }
-//    
-//    @IBAction func vibrateImpact2(_ sender: Any) {
-//        if #available(iOS 13, *) {
-//            let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .rigid)
-//            impactFeedbackGenerator.prepare()
-//            impactFeedbackGenerator.impactOccurred(intensity: 1)
-//        }
-//    }
-//    
-//    @IBAction func vibrateSelection(_ sender: Any) {
-//        self.selectionFeedbackGenerator.selectionChanged()
-//    }
-//    
-//    @IBAction func vibrateSuccess(_ sender: Any) {
-//        self.notificationFeedbackGenerator.notificationOccurred(.success)
-//    }
-//    
-//    @IBAction func vibrateWarning(_ sender: Any) {
-//        self.notificationFeedbackGenerator.notificationOccurred(.warning)
-//    }
-//    
-//    @IBAction func vibrateError(_ sender: Any) {
-//        self.notificationFeedbackGenerator.notificationOccurred(.error)
-//    }
+    
+    
+    @IBAction func impact2(_ sender: Any) {
+        print(2)
+    }
+    
+    @IBAction func impact4(_ sender: Any) {
+    }
+    
+    @IBAction func impact6(_ sender: Any) {
+    }
+    
+    @IBAction func impact8(_ sender: Any) {
+    }
+    
+    @IBAction func impact10(_ sender: Any) {
+    }
+    
+    @IBAction func notifySuccess(_ sender: Any) {
+    }
+    
+    @IBAction func notifyWarning(_ sender: Any) {
+    }
+    
+    @IBAction func notifyError(_ sender: Any) {
+    }
+    
+    @IBAction func vibrateSelection(_ sender: Any) {
+    }
     
 }
-
