@@ -24,13 +24,13 @@ struct StepCountWidget: Widget {
         }
         .configurationDisplayName("Step Count Widget")
         .description("걸음수를 확인해 보세요.")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
 #Preview(as: .systemSmall) {
     StepCountWidget()
 } timeline: {
-    StepCountEntry(date: .now, stepCount: 100)
-    StepCountEntry(date: .now, stepCount: 200)
+    StepCountEntry(date: .now, stepCount: 100, distance: 1.5)
+    StepCountEntry(date: .now, stepCount: 200, distance: 1.8)
 }

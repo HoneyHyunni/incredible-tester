@@ -377,9 +377,9 @@
 			projectRoot = "";
 			targets = (
 				08F4E29B2B1037CB002EAF03 /* IncredibleTester */,
+				081E27532B2FE66E007C3457 /* IncredibleWidgetExtension */,
 				08F4E2B12B1037CD002EAF03 /* IncredibleTesterTests */,
 				08F4E2BB2B1037CD002EAF03 /* IncredibleTesterUITests */,
-				081E27532B2FE66E007C3457 /* IncredibleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -515,7 +515,7 @@
 				INFOPLIST_FILE = IncredibleWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = IncredibleWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,7 +543,7 @@
 				INFOPLIST_FILE = IncredibleWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = IncredibleWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
