@@ -11,6 +11,6 @@ import WidgetKit
 @main
 struct IncredibleWidgetBundle: WidgetBundle {
     var body: some Widget {
-        IncredibleWidget()
+        StepCountWidget()
     }
 }

@@ -14,9 +14,9 @@
             filePath = "IncredibleWidget/IncredibleWidget.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "IncredibleWidget"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "StepCountWidget"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>

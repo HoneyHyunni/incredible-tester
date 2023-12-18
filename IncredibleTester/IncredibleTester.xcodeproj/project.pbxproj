@@ -10,9 +10,12 @@
 		081E27572B2FE66E007C3457 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081E27562B2FE66E007C3457 /* WidgetKit.framework */; };
 		081E27592B2FE66E007C3457 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081E27582B2FE66E007C3457 /* SwiftUI.framework */; };
 		081E275C2B2FE66E007C3457 /* IncredibleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */; };
-		081E275E2B2FE66E007C3457 /* IncredibleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E275D2B2FE66E007C3457 /* IncredibleWidget.swift */; };
+		081E275E2B2FE66E007C3457 /* StepCountWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E275D2B2FE66E007C3457 /* StepCountWidget.swift */; };
 		081E27602B2FE66F007C3457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081E275F2B2FE66F007C3457 /* Assets.xcassets */; };
 		081E27642B2FE66F007C3457 /* IncredibleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 081E27542B2FE66E007C3457 /* IncredibleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276A2B300281007C3457 /* StepCountProvider.swift */; };
+		081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276E2B3002ED007C3457 /* StepCountView.swift */; };
+		081E27722B300339007C3457 /* StepCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27712B300339007C3457 /* StepCountEntry.swift */; };
 		086C292A2B15709400433548 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29292B15709400433548 /* HomeViewController.swift */; };
 		086C292F2B15753A00433548 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C292E2B15753A00433548 /* HomeViewModel.swift */; };
 		086C29322B159E0600433548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29312B159E0600433548 /* Constants.swift */; };
@@ -71,9 +74,12 @@
 		081E27562B2FE66E007C3457 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		081E27582B2FE66E007C3457 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibleWidgetBundle.swift; sourceTree = "<group>"; };
-		081E275D2B2FE66E007C3457 /* IncredibleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibleWidget.swift; sourceTree = "<group>"; };
+		081E275D2B2FE66E007C3457 /* StepCountWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountWidget.swift; sourceTree = "<group>"; };
 		081E275F2B2FE66F007C3457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081E27612B2FE66F007C3457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081E276A2B300281007C3457 /* StepCountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountProvider.swift; sourceTree = "<group>"; };
+		081E276E2B3002ED007C3457 /* StepCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountView.swift; sourceTree = "<group>"; };
+		081E27712B300339007C3457 /* StepCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountEntry.swift; sourceTree = "<group>"; };
 		086C29292B15709400433548 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		086C292E2B15753A00433548 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		086C29312B159E0600433548 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -139,12 +145,39 @@
 		081E275A2B2FE66E007C3457 /* IncredibleWidget */ = {
 			isa = PBXGroup;
 			children = (
+				081E27702B300322007C3457 /* Entries */,
+				081E276D2B3002D8007C3457 /* Views */,
+				081E27692B30026C007C3457 /* Providers */,
 				081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */,
-				081E275D2B2FE66E007C3457 /* IncredibleWidget.swift */,
+				081E275D2B2FE66E007C3457 /* StepCountWidget.swift */,
 				081E275F2B2FE66F007C3457 /* Assets.xcassets */,
 				081E27612B2FE66F007C3457 /* Info.plist */,
 			);
 			path = IncredibleWidget;
+			sourceTree = "<group>";
+		};
+		081E27692B30026C007C3457 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				081E276A2B300281007C3457 /* StepCountProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		081E276D2B3002D8007C3457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				081E276E2B3002ED007C3457 /* StepCountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		081E27702B300322007C3457 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				081E27712B300339007C3457 /* StepCountEntry.swift */,
+			);
+			path = Entries;
 			sourceTree = "<group>";
 		};
 		086C29302B159DFA00433548 /* Common */ = {
@@ -391,8 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081E275E2B2FE66E007C3457 /* IncredibleWidget.swift in Sources */,
+				081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */,
+				081E275E2B2FE66E007C3457 /* StepCountWidget.swift in Sources */,
 				081E275C2B2FE66E007C3457 /* IncredibleWidgetBundle.swift in Sources */,
+				081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */,
+				081E27722B300339007C3457 /* StepCountEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
