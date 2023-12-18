@@ -9,16 +9,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var stepsLabel: UILabel!
+    
     let viewModel = HomeViewModel()
-    private let alertController = UIAlertController(title: Constants.ALERT_CONT_TITLE, message: Constants.ALERT_CONT_DISCRIPT, preferredStyle: .actionSheet)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewModel.configureAlertController(of: self.alertController, caller: self)
-    }
-    
-    @IBAction func selectView(_ sender: Any) {
-        self.present(self.alertController, animated: true)
+        
+        if stepsLabel.text?.isEmpty == true { stepsLabel.text = "걸음수를 확인 중입니다." }
     }
     
 }
