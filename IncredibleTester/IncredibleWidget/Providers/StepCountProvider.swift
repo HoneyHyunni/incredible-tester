@@ -18,16 +18,15 @@ struct StepCountProvider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<StepCountEntry>) -> ()) {
-        var entries: [StepCountEntry] = []
+        let date = Date()
+        let policyDate = Calendar.current.date(byAdding: .minute, value: 10, to: date)
         
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = StepCountEntry(date: entryDate, stepCount: 500)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let dateComponents = Calendar.current.dateComponents([.hour, .month, .second], from: date)
+        let tempStepCount = (dateComponents.hour ?? 0) + (dateComponents.month ?? 0) + (dateComponents.second ?? 0)
+        
+        let stepCountEntry = StepCountEntry(date: date, stepCount: tempStepCount)
+        let timeline = Timeline(entries: [stepCountEntry], policy: .after(policyDate ?? date))
+        
         completion(timeline)
     }
 }

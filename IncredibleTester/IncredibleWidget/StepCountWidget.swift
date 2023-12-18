@@ -22,8 +22,9 @@ struct StepCountWidget: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Step Count Widget")
+        .description("걸음수를 확인해 보세요.")
+        .supportedFamilies([.systemSmall])
     }
 }
 
