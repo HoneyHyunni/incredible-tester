@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("⎿ HomeViewController view 로딩 완료")
         if stepsLabel.text?.isEmpty == true { stepsLabel.text = "걸음수를 확인 중입니다." }
     }
     
