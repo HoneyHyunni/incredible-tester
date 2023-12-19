@@ -1,5 +1,5 @@
 //
-//  IncredibleWidget.swift
+//  StepCountWidget.swift
 //  IncredibleWidget
 //
 //  Created by Sanghyun on 12/18/23.

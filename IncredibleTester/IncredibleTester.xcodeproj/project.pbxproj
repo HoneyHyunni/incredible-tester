@@ -16,6 +16,10 @@
 		081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276A2B300281007C3457 /* StepCountProvider.swift */; };
 		081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276E2B3002ED007C3457 /* StepCountView.swift */; };
 		081E27722B300339007C3457 /* StepCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27712B300339007C3457 /* StepCountEntry.swift */; };
+		081E27742B314FCE007C3457 /* PointWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27732B314FCE007C3457 /* PointWidget.swift */; };
+		081E27782B31504A007C3457 /* PointEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27772B31504A007C3457 /* PointEntry.swift */; };
+		081E277A2B3150A4007C3457 /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27792B3150A4007C3457 /* PointView.swift */; };
+		081E277C2B315166007C3457 /* PointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E277B2B315166007C3457 /* PointProvider.swift */; };
 		086C292A2B15709400433548 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29292B15709400433548 /* HomeViewController.swift */; };
 		086C292F2B15753A00433548 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C292E2B15753A00433548 /* HomeViewModel.swift */; };
 		086C29322B159E0600433548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29312B159E0600433548 /* Constants.swift */; };
@@ -80,6 +84,10 @@
 		081E276A2B300281007C3457 /* StepCountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountProvider.swift; sourceTree = "<group>"; };
 		081E276E2B3002ED007C3457 /* StepCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountView.swift; sourceTree = "<group>"; };
 		081E27712B300339007C3457 /* StepCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountEntry.swift; sourceTree = "<group>"; };
+		081E27732B314FCE007C3457 /* PointWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointWidget.swift; sourceTree = "<group>"; };
+		081E27772B31504A007C3457 /* PointEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointEntry.swift; sourceTree = "<group>"; };
+		081E27792B3150A4007C3457 /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		081E277B2B315166007C3457 /* PointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointProvider.swift; sourceTree = "<group>"; };
 		086C29292B15709400433548 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		086C292E2B15753A00433548 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		086C29312B159E0600433548 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -150,6 +158,7 @@
 				081E27692B30026C007C3457 /* Providers */,
 				081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */,
 				081E275D2B2FE66E007C3457 /* StepCountWidget.swift */,
+				081E27732B314FCE007C3457 /* PointWidget.swift */,
 				081E275F2B2FE66F007C3457 /* Assets.xcassets */,
 				081E27612B2FE66F007C3457 /* Info.plist */,
 			);
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				081E276A2B300281007C3457 /* StepCountProvider.swift */,
+				081E277B2B315166007C3457 /* PointProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				081E276E2B3002ED007C3457 /* StepCountView.swift */,
+				081E27792B3150A4007C3457 /* PointView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				081E27712B300339007C3457 /* StepCountEntry.swift */,
+				081E27772B31504A007C3457 /* PointEntry.swift */,
 			);
 			path = Entries;
 			sourceTree = "<group>";
@@ -426,9 +438,13 @@
 			files = (
 				081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */,
 				081E275E2B2FE66E007C3457 /* StepCountWidget.swift in Sources */,
+				081E277C2B315166007C3457 /* PointProvider.swift in Sources */,
 				081E275C2B2FE66E007C3457 /* IncredibleWidgetBundle.swift in Sources */,
+				081E27782B31504A007C3457 /* PointEntry.swift in Sources */,
 				081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */,
+				081E27742B314FCE007C3457 /* PointWidget.swift in Sources */,
 				081E27722B300339007C3457 /* StepCountEntry.swift in Sources */,
+				081E277A2B3150A4007C3457 /* PointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

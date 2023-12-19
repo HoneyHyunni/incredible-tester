@@ -1,5 +1,5 @@
 //
-//  BasicProvider.swift
+//  StepCountProvider.swift
 //  IncredibleTester
 //
 //  Created by Sanghyun on 12/18/23.

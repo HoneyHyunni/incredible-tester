@@ -12,5 +12,6 @@ import WidgetKit
 struct IncredibleWidgetBundle: WidgetBundle {
     var body: some Widget {
         StepCountWidget()
+        PointWidget()
     }
 }

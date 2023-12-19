@@ -1,5 +1,5 @@
 //
-//  BasicEntries.swift
+//  StepCountEntry.swift
 //  IncredibleWidgetExtension
 //
 //  Created by Sanghyun on 12/18/23.

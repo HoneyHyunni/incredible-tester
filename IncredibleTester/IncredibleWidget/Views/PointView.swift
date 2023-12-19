@@ -1,33 +1,33 @@
 //
-//  StepCountView.swift
+//  PointView.swift
 //  IncredibleWidgetExtension
 //
-//  Created by Sanghyun on 12/18/23.
+//  Created by Sanghyun on 12/19/23.
 //
 
 import SwiftUI
 import WidgetKit
 
-struct StepCountView : View {
+struct PointView : View {
     @Environment(\.widgetFamily) var family: WidgetFamily
     
-    var entry: StepCountProvider.Entry
+    var entry: PointProvider.Entry
     
     @ViewBuilder
     var body: some View {
         switch family {
         case .systemSmall:
-            StepCountSmallView(entry: self.entry)
+            PointSmallView(entry: self.entry)
         case .systemMedium:
-            StepCountMediumView(entry: self.entry)
+            PointMediumView(entry: self.entry)
         default:
             DefaultView()
         }
     }
 }
 
-struct StepCountSmallView: View {
-    var entry: StepCountProvider.Entry
+struct PointSmallView: View {
+    var entry: PointProvider.Entry
     
     var body: some View {
         VStack {
@@ -35,15 +35,15 @@ struct StepCountSmallView: View {
                 .foregroundColor(.yellow)
             Text(entry.date, style: .time)
             
-            Text("Step Count:")
+            Text("Point:")
                 .foregroundColor(.yellow)
-            Text(entry.stepCount.description)
+            Text(entry.point.description)
         }
     }
 }
 
-struct StepCountMediumView: View {
-    var entry: StepCountProvider.Entry
+struct PointMediumView: View {
+    var entry: PointProvider.Entry
     
     var body: some View {
         VStack {
@@ -51,21 +51,13 @@ struct StepCountMediumView: View {
                 .foregroundColor(.yellow)
             Text(entry.date, style: .time)
             
-            Text("Step Count:")
+            Text("Point:")
                 .foregroundColor(.yellow)
-            Text(entry.stepCount.description)
+            Text(entry.point.description)
             
-            Text("Distance:")
+            Text("Grade:")
                 .foregroundColor(.yellow)
-            Text("\(entry.distance.description) km")
-        }
-    }
-}
-
-struct DefaultView: View {
-    var body: some View {
-        VStack {
-            Text("위젯에 문제가 있어요.")
+            Text("\(entry.grade)")
         }
     }
 }
