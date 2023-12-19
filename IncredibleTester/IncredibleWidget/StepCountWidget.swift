@@ -19,7 +19,6 @@ struct StepCountWidget: Widget {
             } else {
                 StepCountView(entry: entry)
                     .padding()
-                    .background()
             }
         }
         .configurationDisplayName("Step Count Widget")
@@ -28,6 +27,7 @@ struct StepCountWidget: Widget {
     }
 }
 
+@available(iOS 17.0, *)
 #Preview(as: .systemSmall) {
     StepCountWidget()
 } timeline: {
