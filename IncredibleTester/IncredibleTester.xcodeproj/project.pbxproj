@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081E27572B2FE66E007C3457 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081E27562B2FE66E007C3457 /* WidgetKit.framework */; };
+		081E27592B2FE66E007C3457 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081E27582B2FE66E007C3457 /* SwiftUI.framework */; };
+		081E275C2B2FE66E007C3457 /* IncredibleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */; };
+		081E275E2B2FE66E007C3457 /* StepCountWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E275D2B2FE66E007C3457 /* StepCountWidget.swift */; };
+		081E27602B2FE66F007C3457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081E275F2B2FE66F007C3457 /* Assets.xcassets */; };
+		081E27642B2FE66F007C3457 /* IncredibleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 081E27542B2FE66E007C3457 /* IncredibleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276A2B300281007C3457 /* StepCountProvider.swift */; };
+		081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E276E2B3002ED007C3457 /* StepCountView.swift */; };
+		081E27722B300339007C3457 /* StepCountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27712B300339007C3457 /* StepCountEntry.swift */; };
+		081E27742B314FCE007C3457 /* PointWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27732B314FCE007C3457 /* PointWidget.swift */; };
+		081E27782B31504A007C3457 /* PointEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27772B31504A007C3457 /* PointEntry.swift */; };
+		081E277A2B3150A4007C3457 /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E27792B3150A4007C3457 /* PointView.swift */; };
+		081E277C2B315166007C3457 /* PointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E277B2B315166007C3457 /* PointProvider.swift */; };
 		086C292A2B15709400433548 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29292B15709400433548 /* HomeViewController.swift */; };
 		086C292F2B15753A00433548 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C292E2B15753A00433548 /* HomeViewModel.swift */; };
 		086C29322B159E0600433548 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C29312B159E0600433548 /* Constants.swift */; };
@@ -23,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		081E27622B2FE66F007C3457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F4E2942B1037CB002EAF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081E27532B2FE66E007C3457;
+			remoteInfo = IncredibleWidgetExtension;
+		};
 		08F4E2B32B1037CD002EAF03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08F4E2942B1037CB002EAF03 /* Project object */;
@@ -39,7 +59,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		081E27652B2FE66F007C3457 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				081E27642B2FE66F007C3457 /* IncredibleWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		081E27542B2FE66E007C3457 /* IncredibleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IncredibleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		081E27562B2FE66E007C3457 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		081E27582B2FE66E007C3457 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibleWidgetBundle.swift; sourceTree = "<group>"; };
+		081E275D2B2FE66E007C3457 /* StepCountWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountWidget.swift; sourceTree = "<group>"; };
+		081E275F2B2FE66F007C3457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081E27612B2FE66F007C3457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081E276A2B300281007C3457 /* StepCountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountProvider.swift; sourceTree = "<group>"; };
+		081E276E2B3002ED007C3457 /* StepCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountView.swift; sourceTree = "<group>"; };
+		081E27712B300339007C3457 /* StepCountEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountEntry.swift; sourceTree = "<group>"; };
+		081E27732B314FCE007C3457 /* PointWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointWidget.swift; sourceTree = "<group>"; };
+		081E27772B31504A007C3457 /* PointEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointEntry.swift; sourceTree = "<group>"; };
+		081E27792B3150A4007C3457 /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		081E277B2B315166007C3457 /* PointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointProvider.swift; sourceTree = "<group>"; };
 		086C29292B15709400433548 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		086C292E2B15753A00433548 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		086C29312B159E0600433548 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -60,6 +108,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		081E27512B2FE66E007C3457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081E27592B2FE66E007C3457 /* SwiftUI.framework in Frameworks */,
+				081E27572B2FE66E007C3457 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F4E2992B1037CB002EAF03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +141,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081E27552B2FE66E007C3457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081E27562B2FE66E007C3457 /* WidgetKit.framework */,
+				081E27582B2FE66E007C3457 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		081E275A2B2FE66E007C3457 /* IncredibleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				081E27702B300322007C3457 /* Entries */,
+				081E276D2B3002D8007C3457 /* Views */,
+				081E27692B30026C007C3457 /* Providers */,
+				081E275B2B2FE66E007C3457 /* IncredibleWidgetBundle.swift */,
+				081E275D2B2FE66E007C3457 /* StepCountWidget.swift */,
+				081E27732B314FCE007C3457 /* PointWidget.swift */,
+				081E275F2B2FE66F007C3457 /* Assets.xcassets */,
+				081E27612B2FE66F007C3457 /* Info.plist */,
+			);
+			path = IncredibleWidget;
+			sourceTree = "<group>";
+		};
+		081E27692B30026C007C3457 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				081E276A2B300281007C3457 /* StepCountProvider.swift */,
+				081E277B2B315166007C3457 /* PointProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		081E276D2B3002D8007C3457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				081E276E2B3002ED007C3457 /* StepCountView.swift */,
+				081E27792B3150A4007C3457 /* PointView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		081E27702B300322007C3457 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				081E27712B300339007C3457 /* StepCountEntry.swift */,
+				081E27772B31504A007C3457 /* PointEntry.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
 		086C29302B159DFA00433548 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				08F4E29E2B1037CB002EAF03 /* IncredibleTester */,
+				081E275A2B2FE66E007C3457 /* IncredibleWidget */,
 				08F4E2B52B1037CD002EAF03 /* IncredibleTesterTests */,
 				08F4E2BF2B1037CD002EAF03 /* IncredibleTesterUITests */,
+				081E27552B2FE66E007C3457 /* Frameworks */,
 				08F4E29D2B1037CB002EAF03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +235,7 @@
 				08F4E29C2B1037CB002EAF03 /* IncredibleTester.app */,
 				08F4E2B22B1037CD002EAF03 /* IncredibleTesterTests.xctest */,
 				08F4E2BC2B1037CD002EAF03 /* IncredibleTesterUITests.xctest */,
+				081E27542B2FE66E007C3457 /* IncredibleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +277,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		081E27532B2FE66E007C3457 /* IncredibleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081E27682B2FE66F007C3457 /* Build configuration list for PBXNativeTarget "IncredibleWidgetExtension" */;
+			buildPhases = (
+				081E27502B2FE66E007C3457 /* Sources */,
+				081E27512B2FE66E007C3457 /* Frameworks */,
+				081E27522B2FE66E007C3457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IncredibleWidgetExtension;
+			productName = IncredibleWidgetExtension;
+			productReference = 081E27542B2FE66E007C3457 /* IncredibleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		08F4E29B2B1037CB002EAF03 /* IncredibleTester */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08F4E2C62B1037CD002EAF03 /* Build configuration list for PBXNativeTarget "IncredibleTester" */;
@@ -173,10 +301,12 @@
 				08F4E2982B1037CB002EAF03 /* Sources */,
 				08F4E2992B1037CB002EAF03 /* Frameworks */,
 				08F4E29A2B1037CB002EAF03 /* Resources */,
+				081E27652B2FE66F007C3457 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				081E27632B2FE66F007C3457 /* PBXTargetDependency */,
 			);
 			name = IncredibleTester;
 			productName = IncredibleTester;
@@ -226,9 +356,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					081E27532B2FE66E007C3457 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					08F4E29B2B1037CB002EAF03 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -256,6 +389,7 @@
 			projectRoot = "";
 			targets = (
 				08F4E29B2B1037CB002EAF03 /* IncredibleTester */,
+				081E27532B2FE66E007C3457 /* IncredibleWidgetExtension */,
 				08F4E2B12B1037CD002EAF03 /* IncredibleTesterTests */,
 				08F4E2BB2B1037CD002EAF03 /* IncredibleTesterUITests */,
 			);
@@ -263,6 +397,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		081E27522B2FE66E007C3457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081E27602B2FE66F007C3457 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F4E29A2B1037CB002EAF03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +432,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		081E27502B2FE66E007C3457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081E276C2B3002C8007C3457 /* StepCountProvider.swift in Sources */,
+				081E275E2B2FE66E007C3457 /* StepCountWidget.swift in Sources */,
+				081E277C2B315166007C3457 /* PointProvider.swift in Sources */,
+				081E275C2B2FE66E007C3457 /* IncredibleWidgetBundle.swift in Sources */,
+				081E27782B31504A007C3457 /* PointEntry.swift in Sources */,
+				081E276F2B3002ED007C3457 /* StepCountView.swift in Sources */,
+				081E27742B314FCE007C3457 /* PointWidget.swift in Sources */,
+				081E27722B300339007C3457 /* StepCountEntry.swift in Sources */,
+				081E277A2B3150A4007C3457 /* PointView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F4E2982B1037CB002EAF03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +482,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		081E27632B2FE66F007C3457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081E27532B2FE66E007C3457 /* IncredibleWidgetExtension */;
+			targetProxy = 081E27622B2FE66F007C3457 /* PBXContainerItemProxy */;
+		};
 		08F4E2B42B1037CD002EAF03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08F4E29B2B1037CB002EAF03 /* IncredibleTester */;
@@ -356,6 +519,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		081E27662B2FE66F007C3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IncredibleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IncredibleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.honeyhyunni.IncredibleTester.IncredibleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		081E27672B2FE66F007C3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AX94CTZN8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IncredibleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IncredibleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.honeyhyunni.IncredibleTester.IncredibleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		08F4E2C42B1037CD002EAF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -478,6 +703,7 @@
 		08F4E2C72B1037CD002EAF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +736,7 @@
 		08F4E2C82B1037CD002EAF03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +845,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		081E27682B2FE66F007C3457 /* Build configuration list for PBXNativeTarget "IncredibleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081E27662B2FE66F007C3457 /* Debug */,
+				081E27672B2FE66F007C3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		08F4E2972B1037CB002EAF03 /* Build configuration list for PBXProject "IncredibleTester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
